@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="earleePayroll.ValidateEditMemberDeet">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="validateEditMemberDetails"/>
+        </methods>
+      </class> <!-- earleePayroll.ValidateEditMemberDeet -->
+      <class name="earleePayroll.ValidateMyOrg">
+        <methods>
+          <include name="validateMyOrganization"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- earleePayroll.ValidateMyOrg -->
+      <class name="earleePayroll.ValidateEmployeeLeave">
+        <methods>
+          <include name="validateEmployeeLeave"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- earleePayroll.ValidateEmployeeLeave -->
+      <class name="earleePayroll.ValidateAddMember">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="validateAddMember"/>
+        </methods>
+      </class> <!-- earleePayroll.ValidateAddMember -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
