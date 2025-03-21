@@ -46,6 +46,12 @@ public class MyOrg extends Main{
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", submitButton);
         submitButton.click();
         
+        //REFRESH PAGE FUNCTION LANG AADD MO DITO
+        
+        
+        //REMOVE COMMENT MO NA LANG TO SA BABA
+//        wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.MY_ORG_BUTTON)).click();
+//        wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.EDIT_MY_ORG_BUTTON)).click();
     }
 
     private void enterInput(By locator, String value) {
