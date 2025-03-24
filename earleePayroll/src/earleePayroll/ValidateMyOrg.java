@@ -35,11 +35,11 @@ public class ValidateMyOrg extends Main {
     }
 
     // Validate field interactability + value
-    public void validateFieldWithValue(By locator, String expectedValue, String fieldName) {
+	public void validateFieldWithValue(By locator, String expectedValue, String fieldName) {
         try {
             WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
             Assert.assertTrue(element.isDisplayed() && element.isEnabled(), fieldName + " is not interactable");
-            String actualValue = element.getAttribute("value").trim();
+			String actualValue = element.getAttribute("value").trim();
             Assert.assertEquals(actualValue, expectedValue, fieldName + " value mismatch. Expected: '" + expectedValue + "', Found: '" + actualValue + "'");
 //            System.out.println(fieldName + " is interactable and value is correct!");
         } catch (Exception e) {
@@ -51,6 +51,7 @@ public class ValidateMyOrg extends Main {
     public void validateDropdownWithValue(By locator, By expectedSelected, String fieldName) {
         try {
             WebElement dropdown = wait.until(ExpectedConditions.elementToBeClickable(locator));
+            dropdown.click();
             Assert.assertTrue(dropdown.isDisplayed() && dropdown.isEnabled(), fieldName + " dropdown is not clickable");
             
             // Fetch expected selected value text (for dynamic comparison)

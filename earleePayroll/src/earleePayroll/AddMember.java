@@ -29,20 +29,19 @@ public class AddMember extends Main {
 
         // Wait for the temp email to be generated
         Thread.sleep(5000);
-        @SuppressWarnings("deprecation")
 		String tempEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(UniversalLocators.TEMP_EMAIL_FIELD)).getAttribute("value");
 
         // Switch back to the member tab
         driver.switchTo().window(tabs.get(0));
 
         // Fill in the member details
-        wait.until(ExpectedConditions.visibilityOfElementLocated(UniversalLocators.FIRST_NAME_MEMBER1)).sendKeys(UniversalLocators.FIRST_NAME_MEMBER);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(UniversalLocators.LAST_NAME_MEMBER1)).sendKeys(UniversalLocators.LAST_NAME_MEMBER);
+        wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.FIRST_NAME_MEMBER1)).sendKeys(UniversalLocators.FIRST_NAME_MEMBER);
+        wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.LAST_NAME_MEMBER1)).sendKeys(UniversalLocators.LAST_NAME_MEMBER);
         wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.GENDER)).click();
         wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.GENDER_OPTION)).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(UniversalLocators.EMAIL_MEMBER)).sendKeys(tempEmail);
+        wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.EMAIL_MEMBER)).sendKeys(tempEmail);
         wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.SAVE_MEMBER_BUTTON)).click();
-		
+        		
         
 		} catch (Exception e) {
             System.out.println("Error encountered: " + e.getMessage());

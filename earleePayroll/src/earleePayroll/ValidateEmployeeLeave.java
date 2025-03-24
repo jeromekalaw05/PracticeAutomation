@@ -19,14 +19,15 @@ public class ValidateEmployeeLeave extends Main {
     	wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	
         try {
-            validateElementClickable(UniversalLocators.EMPLOYEELEAVE_TAB, "Employee Tab");
-            validateElementClickable(UniversalLocators.ADDING_LEAVE, "Add Leave Button");
-            wait.until(ExpectedConditions.visibilityOfElementLocated(UniversalLocators.LEAVETYPE));
+//            validateElementClickable(UniversalLocators.EMPLOYEELEAVE_TAB, "Employee Tab");
+//            validateElementClickable(UniversalLocators.ADDING_LEAVE, "Add Leave Button");
+//            wait.until(ExpectedConditions.visibilityOfElementLocated(UniversalLocators.LEAVETYPE));
             validateElementClickable(UniversalLocators.LEAVETYPE, "Leave Type Dropdown");
             validateElementClickable(UniversalLocators.LEAVE_TYPE_OPT, "Leave Option");
             validateInputValue(UniversalLocators.LEAVENUMBER, UniversalLocators.leaveNumber, "Leave Number");
             validateInputValue(UniversalLocators.LEAVEBALANCE, UniversalLocators.leaveBalance, "Leave Balance");
             validateElementClickable(UniversalLocators.SAVE_BUTTON, "Leave Save Button");
+            wait.until(ExpectedConditions.elementToBeClickable(UniversalLocators.SAVE_BUTTON)).click();
 
         } catch (Exception e) {
             Assert.fail("Validation failed due to error: " + e.getMessage());

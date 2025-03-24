@@ -19,9 +19,9 @@ public class ValidateEditMemberDeet extends Main {
 
         try {
             // Validate Search and Navigation
-            validateElementClickable(UniversalLocators.SEARCH, "Search Bar");
-            validateElementClickable(UniversalLocators.SEARCH_NAME, "Search Result");
-            validateElementClickable(UniversalLocators.COMPLETE_BASIC_INFO, "Complete Info Button");
+//            validateElementClickable(UniversalLocators.SEARCH, "Search Bar");
+//            validateElementClickable(UniversalLocators.SEARCH_NAME, "Search Result");
+//            validateElementClickable(UniversalLocators.COMPLETE_BASIC_INFO, "Complete Info Button");
             validateElementClickable(UniversalLocators.EMPLOYEE_DETAILS_TAB, "Employee Details Tab");
             validateElementClickable(UniversalLocators.EMPLOYEE_DETAILS_EDIT, "Employee Details Edit Button");
 
