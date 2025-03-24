@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\LENOVO\git\earleeautomation\earleePayroll\testng.xml</span>
+                    <span>C:\Users\LENOVO\git\PracticeAutomation\earleePayroll\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
+                    <span class="method-stats">9 methods, 6 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,6 +102,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="earleePayroll.MyOrg" class="method navigator-link" hash-for-method="AddMyOrganization">AddMyOrganization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="earleePayroll.Login" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="earleePayroll.ValidateAddMember" class="method navigator-link" hash-for-method="validateAddMember">validateAddMember</a> <!-- method navigator-link -->
@@ -133,11 +143,6 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="earleePayroll.MyOrg" class="method navigator-link" hash-for-method="AddMyOrganization">AddMyOrganization</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="earleePayroll.EmployeeLeave" class="method navigator-link" hash-for-method="AddingLeave">AddingLeave</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -149,11 +154,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="earleePayroll.EditMemberDetails" class="method navigator-link" hash-for-method="editMemberDetails">editMemberDetails</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="earleePayroll.Login" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -179,15 +179,106 @@
                   <a name="validateEditMemberDetails">
                   </a> <!-- validateEditMemberDetails -->
                   <span class="method-name">validateEditMemberDetails</span>
-                  <div class="stack-trace">java.lang.AssertionError: Validation failed due to exception: Expected condition failed: waiting for element to be clickable: By.xpath: //strong[text()=&apos;Complete Employee Basic Info&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57433/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20fc9bbf08b83874e7b5c40762c2db58
+                  <div class="stack-trace">java.lang.AssertionError: Validation failed due to exception: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Employee Details&apos;] (tried for 10 second(s) with 500 milliseconds interval)
 	at earleePayroll.ValidateEditMemberDeet.validateEditMemberDetails(ValidateEditMemberDeet.java:85)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">earleePayroll.MyOrg</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddMyOrganization">
+                  </a> <!-- AddMyOrganization -->
+                  <span class="method-name">AddMyOrganization</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(), &apos;My Organization&apos;)] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at earleePayroll.MyOrg.AddMyOrganization(MyOrg.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64b1d375bc67205a5bf2e275a729ec07, findElement {value=//div[contains(text(), &apos;My Organization&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57803/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 64b1d375bc67205a5bf2e275a729ec07
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">earleePayroll.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: email1 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at earleePayroll.Login.login(Login.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64b1d375bc67205a5bf2e275a729ec07, findElement {value=email1, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57803/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 64b1d375bc67205a5bf2e275a729ec07
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -204,39 +295,10 @@ Session ID: 20fc9bbf08b83874e7b5c40762c2db58
                   <a name="validateMyOrganization">
                   </a> <!-- validateMyOrganization -->
                   <span class="method-name">validateMyOrganization</span>
-                  <div class="stack-trace">java.lang.AssertionError: Company Industry dropdown validation failed. Exception: Expected condition failed: waiting for element to be clickable: By.id: pr_id_31_label (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57433/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20fc9bbf08b83874e7b5c40762c2db58
-	at earleePayroll.ValidateMyOrg.validateDropdownWithValue(ValidateMyOrg.java:66)
-	at earleePayroll.ValidateMyOrg.validateMyOrganization(ValidateMyOrg.java:24)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">earleePayroll.ValidateAddMember</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateAddMember">
-                  </a> <!-- validateAddMember -->
-                  <span class="method-name">validateAddMember</span>
-                  <div class="stack-trace">java.lang.AssertionError: Test failed due to exception: Expected condition failed: waiting for visibility of element located by By.id: firstName (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57433/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20fc9bbf08b83874e7b5c40762c2db58
-	at earleePayroll.ValidateAddMember.validateAddMember(ValidateAddMember.java:61)
+                  <div class="stack-trace">java.lang.AssertionError: Company Name failed validation. Exception: Expected condition failed: waiting for element to be clickable: By.xpath: //input[contains(@class, &apos;p-inputtext&apos;) and @formcontrolname=&apos;companyName&apos;]
+ (tried for 10 second(s) with 500 milliseconds interval)
+	at earleePayroll.ValidateMyOrg.validateFieldWithValue(ValidateMyOrg.java:46)
+	at earleePayroll.ValidateMyOrg.validateMyOrganization(ValidateMyOrg.java:21)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
@@ -255,13 +317,8 @@ Session ID: 20fc9bbf08b83874e7b5c40762c2db58
                   <a name="validateEmployeeLeave">
                   </a> <!-- validateEmployeeLeave -->
                   <span class="method-name">validateEmployeeLeave</span>
-                  <div class="stack-trace">java.lang.AssertionError: Validation failed due to error: Expected condition failed: waiting for visibility of element located by By.xpath: //span[text()=&apos;Select Leave Type&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57433/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 20fc9bbf08b83874e7b5c40762c2db58
-	at earleePayroll.ValidateEmployeeLeave.validateEmployeeLeave(ValidateEmployeeLeave.java:32)
+                  <div class="stack-trace">java.lang.AssertionError: Validation failed due to error: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Select Leave Type&apos;] (tried for 10 second(s) with 500 milliseconds interval)
+	at earleePayroll.ValidateEmployeeLeave.validateEmployeeLeave(ValidateEmployeeLeave.java:33)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 ... Removed 26 stack frames
 </div> <!-- stack-trace -->
@@ -269,36 +326,52 @@ Session ID: 20fc9bbf08b83874e7b5c40762c2db58
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">earleePayroll.MyOrg</span>
+              <img src="failed.png"/>
+              <span class="class-name">earleePayroll.ValidateAddMember</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AddMyOrganization">
-                  </a> <!-- AddMyOrganization -->
-                  <span class="method-name">AddMyOrganization</span>
+                  <a name="validateAddMember">
+                  </a> <!-- validateAddMember -->
+                  <span class="method-name">validateAddMember</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: email (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at earleePayroll.ValidateAddMember.validateAddMember(ValidateAddMember.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=134.0.6998.118)
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64b1d375bc67205a5bf2e275a729ec07, findElement {value=email, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\LENOVO\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57803}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57803/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 64b1d375bc67205a5bf2e275a729ec07
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">earleePayroll.Login</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -347,7 +420,7 @@ Session ID: 20fc9bbf08b83874e7b5c40762c2db58
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\LENOVO\git\earleeautomation\earleePayroll\testng.xml</span>
+            <span class="header-content">C:\Users\LENOVO\git\PracticeAutomation\earleePayroll\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -406,41 +479,41 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateAddMember')
-data.setCell(0, 2, 'earleePayroll.ValidateAddMember')
-data.setCell(0, 3, 12727);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'earleePayroll.Login')
+data.setCell(0, 3, 19104);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateEmployeeLeave')
 data.setCell(1, 2, 'earleePayroll.ValidateEmployeeLeave')
-data.setCell(1, 3, 11124);
+data.setCell(1, 3, 10300);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateMyOrganization')
-data.setCell(2, 2, 'earleePayroll.ValidateMyOrg')
-data.setCell(2, 3, 11120);
+data.setCell(2, 1, 'AddMyOrganization')
+data.setCell(2, 2, 'earleePayroll.MyOrg')
+data.setCell(2, 3, 10298);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateEditMemberDetails')
-data.setCell(3, 2, 'earleePayroll.ValidateEditMemberDeet')
-data.setCell(3, 3, 11101);
+data.setCell(3, 1, 'validateAddMember')
+data.setCell(3, 2, 'earleePayroll.ValidateAddMember')
+data.setCell(3, 3, 10289);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'addMember')
-data.setCell(4, 2, 'earleePayroll.AddMember')
-data.setCell(4, 3, 9499);
+data.setCell(4, 1, 'validateMyOrganization')
+data.setCell(4, 2, 'earleePayroll.ValidateMyOrg')
+data.setCell(4, 3, 10286);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'AddMyOrganization')
-data.setCell(5, 2, 'earleePayroll.MyOrg')
-data.setCell(5, 3, 9146);
+data.setCell(5, 1, 'addMember')
+data.setCell(5, 2, 'earleePayroll.AddMember')
+data.setCell(5, 3, 10272);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'editMemberDetails')
 data.setCell(6, 2, 'earleePayroll.EditMemberDetails')
-data.setCell(6, 3, 8423);
+data.setCell(6, 3, 10265);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'login')
-data.setCell(7, 2, 'earleePayroll.Login')
-data.setCell(7, 3, 4003);
+data.setCell(7, 1, 'AddingLeave')
+data.setCell(7, 2, 'earleePayroll.EmployeeLeave')
+data.setCell(7, 3, 10259);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'AddingLeave')
-data.setCell(8, 2, 'earleePayroll.EmployeeLeave')
-data.setCell(8, 3, 710);
+data.setCell(8, 1, 'validateEditMemberDetails')
+data.setCell(8, 2, 'earleePayroll.ValidateEditMemberDeet')
+data.setCell(8, 3, 10224);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -549,15 +622,19 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">1301 ms</span>
+                <span class="method-start">1193 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">earleePayroll.MyOrg</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AddMyOrganization</span>
-                <span class="method-start">5309 ms</span>
+                <span class="method-start">20309 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -566,14 +643,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateMyOrganization</span>
-                <span class="method-start">14457 ms</span>
+                <span class="method-start">30609 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">earleePayroll.AddMember</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">addMember</span>
-                <span class="method-start">25579 ms</span>
+                <span class="method-start">40898 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -582,14 +659,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateAddMember</span>
-                <span class="method-start">35079 ms</span>
+                <span class="method-start">51173 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">earleePayroll.EditMemberDetails</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">editMemberDetails</span>
-                <span class="method-start">47809 ms</span>
+                <span class="method-start">61464 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -598,14 +675,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateEditMemberDetails</span>
-                <span class="method-start">56234 ms</span>
+                <span class="method-start">71731 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">earleePayroll.EmployeeLeave</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">AddingLeave</span>
-                <span class="method-start">67337 ms</span>
+                <span class="method-start">81958 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -614,14 +691,14 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateEmployeeLeave</span>
-                <span class="method-start">68049 ms</span>
+                <span class="method-start">92218 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">earleePayroll.Login</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">79220 ms</span>
+                <span class="method-start">102600 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

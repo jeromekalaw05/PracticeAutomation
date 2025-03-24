@@ -10,6 +10,13 @@
           <include name="validateEditMemberDetails"/>
         </methods>
       </class> <!-- earleePayroll.ValidateEditMemberDeet -->
+      <class name="earleePayroll.MyOrg">
+        <methods>
+          <include name="AddMyOrganization"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- earleePayroll.MyOrg -->
       <class name="earleePayroll.ValidateMyOrg">
         <methods>
           <include name="validateMyOrganization"/>
@@ -17,6 +24,13 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- earleePayroll.ValidateMyOrg -->
+      <class name="earleePayroll.Login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- earleePayroll.Login -->
       <class name="earleePayroll.ValidateEmployeeLeave">
         <methods>
           <include name="validateEmployeeLeave"/>
